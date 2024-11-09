@@ -1,0 +1,659 @@
+/* GLOBAL STYLES */
+html, body {
+    margin: 0;
+    font-size: 1.2rem;
+    font-family: League Spartan;
+    height: 100%;
+    width: 100vw;
+} 
+.color-purple {
+    color: hsl(300, 43%, 22%);
+}
+
+.color-greypurple {
+    color: hsl(303, 10%, 53%);
+}
+
+.color-white {
+    color: white;
+}
+
+.color-lightpurple {
+    color: hsl(333, 80%, 67%);
+    margin-top: -25px;
+}
+
+.bold-text {
+    font-weight: 700;
+}
+
+/* TYPOGRAPHY END */
+
+/* DIV ARRANGEMENT START */
+.container,
+.container-top, 
+.container-bottom,
+.introduction, 
+.reviews-stars,
+.reviews-stars-box, 
+.reviews-text,
+.people-text,
+.people-container {
+    display: flex;
+}
+
+.introduction {
+    flex-direction: column;
+}
+
+.reviews-stars {
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.reviews-stars-one,
+.reviews-stars-two,
+.reviews-stars-three {
+    background-color: hsl(300, 24%, 96%); 
+    border-radius: 8px;
+}
+
+.color-greypurple {
+    margin-top: -5px;
+}
+
+.reviews-text-one,
+.reviews-text-two,
+.reviews-text-three {
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 8px;
+}
+
+a {
+    color: hsl(333, 80%, 67%);
+    text-decoration: none;
+}
+
+
+/* DIV ARRANGEMENT END */
+
+@media (max-width: 699px) {
+    /* GLOBAL STYLES START */
+    .spacer {
+        display: none;
+    }
+
+    body { 
+        background-color: white;
+    }
+    /* GLOBAL STYLES END */
+
+    /* TYPOGRAPHY START */
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    p {
+        line-height: 1.5;
+        font-size: 0.9rem;
+    }
+    /* TYPOGRAPHY END */
+
+
+    /* LARGE CONTAINERS DIV STYLES START */
+    .container { 
+        min-width: 90vw;
+        max-width: 90vw;
+        margin: 0 auto;
+        padding: 20px 0;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .container-top {
+        min-width: 300px;
+        max-width: 300px;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container-bottom {
+        min-width: 300px;
+        max-width: 300px;
+        margin: 0 auto 30px auto; 
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }   
+    /* LARGE CONTAINERS DIV STYLES END */
+
+    /* SMALL CONTAINERS DIV STYLES START*/
+    .introduction {
+        text-align: center;
+        align-items: center;
+        max-width: 300px;
+        min-width: 300px;
+    }
+
+    .color-greypurple {
+        width: 250px;
+    }
+
+    .stars {
+        margin: 25px 20px 0 30px;
+        text-align: center;
+        letter-spacing: 2px;
+    }
+
+    .reviews-stars-box img {
+        width: 17px;
+    }
+
+    .reviews-stars {
+        margin: 20px 0;
+        font-size: 1rem;
+    }
+
+    .reviews-stars-box {
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .reviews-title {
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .reviews-text { 
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* SMALL CONTAINERS DIV STYLES END */
+
+    /* SMALLEST CONTAINERS DIV STYLES START */
+    .reviews-stars-one,
+    .reviews-stars-two,
+    .reviews-stars-three {
+        width: 250px;
+        height: 80px;
+    }
+
+    .reviews-text { 
+        height: 930px;
+    }
+
+    .reviews-text-one,
+    .reviews-text-two,
+    .reviews-text-three {
+        height: 300px;
+        min-width: 250px;
+        max-width: 250px;
+    }
+
+    .people-text {
+        flex-direction: column;
+        padding: 15px 0;
+        margin-left: 5px;
+     }
+     
+     .people-image {
+        border-radius: 50%;
+        height: 60px;
+        padding: 10px 10px;
+    }
+
+     .people-paragraph {
+        width: 200px;
+        margin: -10px auto;
+        padding: 0 35px 10px 35px;
+     }
+
+     .attribution {
+        color: hsl(300, 43%, 22%);
+        text-align: center;
+        align-items: center;
+        margin-bottom: 40px;
+        font-size: 0.9rem;
+        width: 300px;
+        line-height: 1.2;
+    }
+
+    a {
+        margin-left: 2px;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 1199px) {
+    /* GLOBAL STYLES START */
+    .spacer {
+        display: none;
+    }
+
+    body { 
+        background: url(../images/bg-pattern-bottom-desktop.svg);
+    }
+    /* GLOBAL STYLES END */
+
+    /* TYPOGRAPHY START */
+    h1 {
+        font-size: 2.7rem;
+    }
+    
+    p {
+        line-height: 1.5;
+        font-size: 1.2rem;
+    }
+    /* TYPOGRAPHY END */
+
+
+    /* LARGE CONTAINERS DIV STYLES START */
+    .container { 
+        min-width: 90vw;
+        max-width: 90vw;
+        margin: 0 auto;
+        padding: 20px 0;
+        height: 100vh;
+        flex-direction: column;
+    }
+
+    .container-top {
+        min-width: 900px;
+        max-width: 900px;
+        margin: 0 auto;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .container-bottom {
+        min-width: 900px;
+        max-width: 900px;
+        margin: 0 auto 30px auto; 
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }   
+    /* LARGE CONTAINERS DIV STYLES END */
+
+    /* SMALL CONTAINERS DIV STYLES START*/
+    .introduction {
+        text-align: center;
+        max-width: 500px;
+        min-width: 500px;
+    }
+
+    .stars {
+        margin: 25px 20px 0 30px;
+        text-align: center;
+        letter-spacing: 6px;
+    }
+
+    .reviews-stars-box img {
+        width: 23px;
+    }
+
+    .reviews-stars {
+        margin: 20px 0;
+        font-size: 1rem;
+    }
+
+    .reviews-stars-box {
+        flex-direction: column;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+    }
+
+    .reviews-title {
+        text-align: center;
+        margin-top: -10px;
+    }
+
+    .reviews-text { 
+        width: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    /* SMALL CONTAINERS DIV STYLES END */
+
+    /* SMALLEST CONTAINERS DIV STYLES START */
+    .reviews-stars-one,
+    .reviews-stars-two,
+    .reviews-stars-three {
+        width: 470px;
+        height: 100px;
+    }
+
+    .reviews-text { 
+        height: 1030px;
+    }
+
+    .reviews-text-one,
+    .reviews-text-two,
+    .reviews-text-three {
+        height: 330px;
+        min-width: 440px;
+        max-width: 440px;
+    }
+
+    .people-text {
+        flex-direction: column;
+        padding: 25px 0;
+        margin-left: -10px;
+     }
+     
+     .people-image {
+        border-radius: 50%;
+        height: 60px;
+        padding: 25px 20px;
+    }
+
+     .people-paragraph {
+        width: 400px;
+        margin: -10px auto;
+        padding: 0 35px;
+     }
+
+     .attribution {
+        display: flex;
+        color: hsl(300, 43%, 22%);
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    a {
+        margin-left: 5px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1449px) {
+   /* GLOBAL STYLES */
+    body {
+        background: url(../images/bg-pattern-bottom-desktop.svg);
+    }
+    
+    /* GLOBAL STYLES END */
+    
+    /* TYPOGRAPHY START */
+    h1 {
+        font-size: 2.5rem;
+    }
+    
+    p {
+        line-height: 1.5;
+        font-size: 1rem;
+    }
+    /* TYPOGRAPHY END */
+
+    /* LARGE CONTAINERS DIV STYLES START */
+    
+    .container {
+        min-width: 1200px; 
+        max-width: 1200px;
+        margin: auto auto;
+        height: 100vh;
+        justify-content: center;
+        width: 90vw;
+        flex-direction: column;
+    }
+
+    .container-top {
+        height: 350px;
+        min-width: 1200px;
+        max-width: 1200px;
+        justify-content: space-between;
+    }
+    
+    .container-bottom {
+        height: 40vh;
+        min-width: 1200px;
+        max-width: 1200px;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+    }   
+    /* LARGE CONTAINERS DIV STYLES END */
+
+    /* SMALL CONTAINERS DIV STYLES START*/
+    .introduction {
+        text-align: left;
+        max-width: 400px;
+        min-width: 400px;
+    }
+
+    .spacer { 
+        min-width: 100px;
+        max-width: 100px;
+    }
+
+    .reviews-stars {
+        height: 200px;
+        margin: 60px 0;
+    }
+    /* SMALL CONTAINERS DIV STYLES END */
+
+    /* SMALLEST CONTAINERS DIV STYLES START */
+    .stars {
+        margin: 20px 20px 0 30px;
+    }
+
+    .reviews-stars-one,
+    .reviews-stars-three {
+        width: 365px;
+        height: 55px;
+    }
+
+    .reviews-stars-two {
+        width: 380px;
+    }
+
+
+    .bold-text {
+        font-size: 0.8rem;
+        margin-top: 20px;
+    }
+
+    .reviews-stars-two {
+        margin-left: 50px;
+    }
+
+    .reviews-stars-three {
+        margin-left: 100px;
+    }
+
+    .reviews-text { 
+        height: 350px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .reviews-text-one,
+    .reviews-text-two,
+    .reviews-text-three {
+        height: 270px;
+        min-width: 370px;
+        max-width: 370px;
+    }
+
+    .reviews-text-two {
+        margin-top: 25px;
+    }
+
+    .reviews-text-three {
+        margin-top: 50px;
+    }
+
+    .people-image {
+        border-radius: 50%;
+        height: 60px;
+        padding: 10px 20px;
+    }
+
+    .people-text {
+        flex-direction: column;
+        padding: 10px 0;
+     }
+    
+     .people-paragraph {
+         width: 300px;
+         margin: -10px 0;
+         padding: 0 35px;
+     }
+
+     .attribution {
+        display: flex;
+        color: hsl(300, 43%, 22%);
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    a {
+        margin-left: 5px;
+    }
+    /* SMALLEST CONTAINERS DIV STYLES END */
+
+}
+
+@media (min-width: 1450px) {
+
+    /* GLOBAL STYLES */
+    body {
+        background: url(../images/bg-pattern-bottom-desktop.svg);
+    }
+    
+    /* GLOBAL STYLES END */
+    
+    /* TYPOGRAPHY START */
+    h1 {
+        font-size: 3.2rem;
+    }
+    
+    p {
+        line-height: 1.5;
+    }
+    /* TYPOGRAPHY END */
+
+    /* LARGE CONTAINERS DIV STYLES START */
+    .container {
+        margin: auto auto;
+        height: 100vh;
+        justify-content: center;
+        width: 90vw;
+        flex-direction: column;
+    }
+
+    .container-top {
+        height: 350px;
+        min-width: 1380px;
+        max-width: 1380px;
+        margin: 0 auto;
+        justify-content: space-between;
+    }
+    
+    .container-bottom {
+        height: 40vh;
+        min-width: 1380px;
+        max-width: 1380px;
+        margin: 100px auto; 
+        justify-content: space-between;
+        margin-bottom: 50px;
+    }   
+    /* LARGE CONTAINERS DIV STYLES END */
+
+    /* SMALL CONTAINERS DIV STYLES START*/
+    .introduction {
+        text-align: left;
+        max-width: 500px;
+        min-width: 500px;
+    }
+
+    .spacer { 
+        min-width: 200px;
+        max-width: 200px;
+    }
+
+    .stars {
+        margin: 25px 20px 0 30px;
+    }
+
+    .reviews-stars {
+        height: 230px;
+        margin: 60px 0;
+        font-size: 1rem;
+    }
+    /* SMALL CONTAINERS DIV STYLES END */
+
+    /* SMALLEST CONTAINERS DIV STYLES START */
+    .reviews-stars-one,
+    .reviews-stars-two,
+    .reviews-stars-three {
+        width: 470px;
+        height: 65px;
+    }
+
+    .reviews-stars-two {
+        margin-left: 50px;
+    }
+
+    .reviews-stars-three {
+        margin-left: 100px;
+    }
+
+    .reviews-text { 
+        height: 350px;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .reviews-text-one,
+    .reviews-text-two,
+    .reviews-text-three {
+        height: 320px;
+        min-width: 440px;
+        max-width: 440px;
+    }
+
+
+    .reviews-text-two {
+        margin-top: 25px;
+    }
+
+    .reviews-text-three {
+        margin-top: 50px;
+    }
+
+    .people-text {
+        flex-direction: column;
+        padding: 25px 0;
+     }
+     
+     .people-image {
+        border-radius: 50%;
+        height: 60px;
+        padding: 25px 20px;
+    }
+
+     .people-paragraph {
+         width: 400px;
+         margin: -10px auto;
+         padding: 0 35px;
+     }
+
+     .attribution {
+        display: flex;
+        color: hsl(300, 43%, 22%);
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+
+    a {
+        margin-left: 5px;
+    }
+    /* SMALLEST CONTAINERS DIV STYLES END */
+
+}

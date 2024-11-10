@@ -234,7 +234,7 @@ a {
     }
 
     body { 
-        background: url(../images/bg-pattern-bottom-desktop.svg);
+        background: url(images/bg-pattern-bottom-desktop.svg);
     }
     /* GLOBAL STYLES END */
 
@@ -373,7 +373,7 @@ a {
 @media (min-width: 1200px) and (max-width: 1449px) {
    /* GLOBAL STYLES */
     body {
-        background: url(../images/bg-pattern-bottom-desktop.svg);
+        background: url(images/bg-pattern-bottom-desktop.svg);
     }
     
     /* GLOBAL STYLES END */
@@ -522,7 +522,7 @@ a {
 
     /* GLOBAL STYLES */
     body {
-        background: url(../images/bg-pattern-bottom-desktop.svg);
+        background: url(images/bg-pattern-bottom-desktop.svg);
     }
     
     /* GLOBAL STYLES END */
